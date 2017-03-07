@@ -12,8 +12,6 @@ $client = new Client([
     $json->access_token_secret
 ]);
 
-$dir = scandir($json->dir);
-
 $iterator = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($json->dir));
 
 $mtime_max = 0;
